@@ -2,7 +2,10 @@
 name = "st7789"
 description = "ST7789 TFT LCD driver with embedded-graphics support"
 version = "0.7.0"
-authors = ["Ales Katona <almindor@gmail.com>", "Paul Sajna <sajattack@gmail.com>"]
+authors = [
+    "Ales Katona <almindor@gmail.com>",
+    "Paul Sajna <sajattack@gmail.com>",
+]
 edition = "2018"
 license = "MIT"
 repository = "https://github.com/almindor/st7789"
@@ -12,17 +15,17 @@ documentation = "https://docs.rs/st7789"
 rust-version = "1.51"
 
 [dependencies]
-display-interface = "0.4"
-embedded-hal = "0.2"
-nb = "1.0"
+display-interface = "0.5.0"
+embedded-hal = "1.0.0"
+nb = "1.1.0"
 
 [dependencies.embedded-graphics-core]
 optional = true
-version = "0.3.2"
+version = "0.4.0"
 
 [dependencies.heapless]
 optional = true
-version = "0.7"
+version = "0.9.2"
 
 [features]
 default = ["graphics", "batch"]
